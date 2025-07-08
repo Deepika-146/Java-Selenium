@@ -33,4 +33,23 @@ The test scripts are written to automate various UI components of the [DEMOQA si
 ---
 
 ## 🛠 Folder Structure
+DEMOQA-Automation/
+│
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── pages/            # All Page Object classes (HomePage, LoginPage, etc.)
+│   │       └── utils/            # Utility classes like ConfigReader, ExcelReader
+│
+│   └── test/
+│       └── java/
+│           └── tests/            # All your test cases (TestNG classes)
+│           └── base/             # Base class (setup, teardown methods)
+│
+├── drivers/                      # Browser driver executables (like chromedriver.exe)
+├── test-output/                  # TestNG results (auto-generated)
+├── testng.xml                    # TestNG suite config file
+├── pom.xml                       # Maven dependencies (if using Maven)
+└── README.md                     # Project description
+
 
